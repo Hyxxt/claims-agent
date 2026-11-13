@@ -3,7 +3,7 @@
 > 用户描述事故 → Agent 自主检索条款、查询理赔流程 → 带条款引用地回答。
 > 每一步工具调用都在界面上可视化，还内置了一个可被 Claude Code / Cursor 直接调用的 **MCP Server**。
 
-**在线演示**：<https://claims-agent.onrender.com>（Render 免费实例，冷启动约 1 分钟）
+**在线演示**：<https://claims-agent-2e93.onrender.com>（Render 免费实例，冷启动约 1 分钟）
 
 ⚠️ 本项目的保险条款为**虚构的演示数据**（「安心行综合意外险」），不构成任何投保或理赔建议。
 
