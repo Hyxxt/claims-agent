@@ -133,6 +133,14 @@ export default function Home() {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
 
+  // ?demo=1：自动跑一遍示例问题，用于截图 / 一键演示
+  useEffect(() => {
+    if (typeof window !== "undefined" && new URLSearchParams(window.location.search).has("demo")) {
+      ask(EXAMPLES[0]);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   async function ask(question: string) {
     const text = question.trim();
     if (!text || loading) return;
